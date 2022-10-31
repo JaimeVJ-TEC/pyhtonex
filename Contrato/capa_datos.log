@@ -17,3 +17,30 @@
 09:41,29 AM: DEBUG [CursorDelPool.py] : 11 Inicio Metodo With
 09:41,29 AM: DEBUG [Conexion.py] : 41 Conexion obtenida: <connection object at 0x000001E4B3670480; dsn: 'user=postgres password=xxx dbname=examenpy host=127.0.0.1 port=5432', closed: 0>
 09:41,29 AM: DEBUG [CursorDelPool.py] : 17 Se ejecuta exit
+10:34,23 AM: DEBUG [CursorDelPool.py] : 11 Inicio Metodo With
+10:34,23 AM: DEBUG [Conexion.py] : 30 Creacion del pool<psycopg2.pool.SimpleConnectionPool object at 0x00000196B3716260>
+10:34,23 AM: DEBUG [Conexion.py] : 41 Conexion obtenida: <connection object at 0x00000196B3720150; dsn: 'user=postgres password=xxx dbname=examenpy host=127.0.0.1 port=5432', closed: 0>
+10:34,23 AM: DEBUG [ContratoDao.py] : 29 Se registro un contrato
+10:34,23 AM: DEBUG [CursorDelPool.py] : 17 Se ejecuta exit
+10:34,23 AM: DEBUG [ContratoDao.py] : 53 Clientes registrados 1
+10:34,23 AM: DEBUG [CursorDelPool.py] : 11 Inicio Metodo With
+10:34,23 AM: DEBUG [Conexion.py] : 41 Conexion obtenida: <connection object at 0x00000196B3720480; dsn: 'user=postgres password=xxx dbname=examenpy host=127.0.0.1 port=5432', closed: 0>
+10:34,23 AM: DEBUG [CursorDelPool.py] : 17 Se ejecuta exit
+10:35,43 AM: DEBUG [CursorDelPool.py] : 11 Inicio Metodo With
+10:35,43 AM: DEBUG [Conexion.py] : 30 Creacion del pool<psycopg2.pool.SimpleConnectionPool object at 0x0000024C857862C0>
+10:35,43 AM: DEBUG [Conexion.py] : 41 Conexion obtenida: <connection object at 0x0000024C85790150; dsn: 'user=postgres password=xxx dbname=examenpy host=127.0.0.1 port=5432', closed: 0>
+10:35,43 AM: DEBUG [ContratoDao.py] : 37 Se actualizo un contrato
+10:35,43 AM: DEBUG [CursorDelPool.py] : 17 Se ejecuta exit
+10:35,43 AM: DEBUG [ContratoDao.py] : 58 Contrato actualizados: 1
+10:35,43 AM: DEBUG [CursorDelPool.py] : 11 Inicio Metodo With
+10:35,43 AM: DEBUG [Conexion.py] : 41 Conexion obtenida: <connection object at 0x0000024C85790480; dsn: 'user=postgres password=xxx dbname=examenpy host=127.0.0.1 port=5432', closed: 0>
+10:35,43 AM: DEBUG [CursorDelPool.py] : 17 Se ejecuta exit
+10:36,03 AM: DEBUG [CursorDelPool.py] : 11 Inicio Metodo With
+10:36,04 AM: DEBUG [Conexion.py] : 30 Creacion del pool<psycopg2.pool.SimpleConnectionPool object at 0x0000029FAC126170>
+10:36,04 AM: DEBUG [Conexion.py] : 41 Conexion obtenida: <connection object at 0x0000029FAC130150; dsn: 'user=postgres password=xxx dbname=examenpy host=127.0.0.1 port=5432', closed: 0>
+10:36,04 AM: DEBUG [ContratoDao.py] : 45 Se elimino un contrato
+10:36,04 AM: DEBUG [CursorDelPool.py] : 17 Se ejecuta exit
+10:36,04 AM: DEBUG [ContratoDao.py] : 63 Contratos eliminados 1
+10:36,04 AM: DEBUG [CursorDelPool.py] : 11 Inicio Metodo With
+10:36,04 AM: DEBUG [Conexion.py] : 41 Conexion obtenida: <connection object at 0x0000029FAC130480; dsn: 'user=postgres password=xxx dbname=examenpy host=127.0.0.1 port=5432', closed: 0>
+10:36,04 AM: DEBUG [CursorDelPool.py] : 17 Se ejecuta exit

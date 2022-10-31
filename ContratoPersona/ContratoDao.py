@@ -48,19 +48,19 @@ class ContratoDao:
 if __name__ == "__main__":
 
     #INSERT
-    # contrato = Contrato(nocontrato=2, costo=220, fechainicio="01/01/22", fechafin="30/12/22")
-    # ContratoRegistrado = ContratoDao.insertar(contrato)
-    # log.debug(f"Contratos registrados {ContratoRegistrado}")
+    contrato = Contrato(nocontrato=2, costo=220, fechainicio="01/01/22", fechafin="30/12/22")
+    ContratoRegistrado = ContratoDao.insertar(contrato)
+    log.debug(f"Clientes registrados {ContratoRegistrado}")
 
     #UPDATE
-    # contrato = Contrato(nocontrato=5, costo=500, fechainicio="1/06/22", fechafin="10/12/22",idcontrato=1)
+    # contrato = Contrato(nocontrato=5, costo=120, fechainicio="1/06/22", fechafin="10/12/22",idcliente=1)
     # contratoActualizado = ContratoDao.actualizar(contrato)
-    # log.debug(f"Contrato actualizados: {contratoActualizado}")
+    # log.debug(f"Clientes actualizados: {contratoActualizado}")
 
     # #DELETE
-    # contrato = Contrato(idcontrato=3)
+    # contrato = Contrato(idcontrato=1)
     # contratoEliminado = ContratoDao.eliminar(contrato)
-    # log.debug(f"Contratos eliminados {contratoEliminado}")
+    # log.debug(f"Clientes eliminados {contratoEliminado}")
 
     #SELECT
     contrato = ContratoDao.seleccionar()

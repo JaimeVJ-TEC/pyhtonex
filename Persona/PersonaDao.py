@@ -17,7 +17,7 @@ class PersonaDao:
                 registros = cursor.fetchall()
                 personas = []
                 for r in registros:
-                    persona = Persona(r[0],r[1],r[2])
+                    persona = Persona(r[0],r[1],r[2],r[3])
                     personas.append(persona)
                 return personas
 
@@ -48,9 +48,9 @@ class PersonaDao:
 if __name__ == "__main__":
 
     # Insertar
-    persona = Persona(nombre="Juan", edad=21, correo="juan@gmail.com")
-    personasInsertadas = PersonaDao.insertar(persona)
-    log.debug(f"Personas insertadas {personasInsertadas}")
+    # persona = Persona(nombre="Pedro", edad=21, correo="juan@gmail.com")
+    # personasInsertadas = PersonaDao.insertar(persona)
+    # log.debug(f"Personas insertadas {personasInsertadas}")
 
 
     #Actualizar
@@ -58,8 +58,8 @@ if __name__ == "__main__":
     # personasActualizadas = PersonaDao.actualizar(persona)
     # log.debug(f"Personas actualizadas: {personasActualizadas}")
 
-    #Eliminar
-    # persona = Persona(idpersona=1)
+    # Eliminar
+    # persona = Persona(idpersona=2)
     # personasEliminadas = PersonaDao.eliminar(persona)
     # log.debug(f"Personas eliminadas {personasEliminadas}")
 
