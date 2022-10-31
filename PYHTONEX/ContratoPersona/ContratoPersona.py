@@ -16,5 +16,5 @@ class ContratoPersona:
         return self._idcontrato
 
     def __str__(self) -> str:
-        return f"\nID ContraPer: {self._id} \nID Contrato: {self._idpersona} \nID Contrato: {self._idcontrato}"
+        return f"\nID ContraPer: {self._id} \nID Persona: {self._idpersona} \nID Contrato: {self._idcontrato}"
 
