@@ -43,8 +43,11 @@ def login():
 
 @app.route('/logout')
 def logout():
-    session.pop('username')
-    return redirect(url_for('index'))
+    if 'username' in session:
+        session.pop('username')
+        return redirect(url_for('index'))
+    else:
+        return redirect(url_for('index'))
 
 @app.route('/empleado')
 def empleados():
