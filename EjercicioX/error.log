@@ -1,0 +1,41 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2022 09:21:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2022 09:21:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2022 09:21:50] "[33mGET /asda HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2022 09:21:50] "GET /static/styles/404.css HTTP/1.1" 200 -
+ERROR:flask_migrate:Error: Path doesn't exist: 'C:\\Users\\jonar\\Desktop\\PythonExamen\\pyhtonex\\EjercicioX\\migrations'.  Please use the 'init' command to create a new scripts folder.
+ERROR:flask_migrate:Error: Path doesn't exist: 'C:\\Users\\jonar\\Desktop\\PythonExamen\\pyhtonex\\EjercicioX\\migrations'.  Please use the 'init' command to create a new scripts folder.
+ERROR:flask_migrate:Error: Path doesn't exist: 'C:\\Users\\jonar\\Desktop\\PythonExamen\\pyhtonex\\EjercicioX\\migrations'.  Please use the 'init' command to create a new scripts folder.
+ERROR:flask_migrate:Error: Path doesn't exist: 'C:\\Users\\jonar\\Desktop\\PythonExamen\\pyhtonex\\EjercicioX\\migrations'.  Please use the 'init' command to create a new scripts folder.
+ERROR:flask_migrate:Error: Path doesn't exist: 'C:\\Users\\jonar\\Desktop\\PythonExamen\\pyhtonex\\EjercicioX\\migrations'.  Please use the 'init' command to create a new scripts folder.
+ERROR:flask_migrate:Error: Path doesn't exist: 'C:\\Users\\jonar\\Desktop\\PythonExamen\\pyhtonex\\EjercicioX\\migrations'.  Please use the 'init' command to create a new scripts folder.
+ERROR:flask_migrate:Error: Path doesn't exist: 'C:\\Users\\jonar\\Desktop\\PythonExamen\\pyhtonex\\EjercicioX\\migrations'.  Please use the 'init' command to create a new scripts folder.
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2022 09:57:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2022 09:57:50] "[33mGET /empleados HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2022 09:57:50] "GET /static/styles/404.css HTTP/1.1" 200 -
+DEBUG:app:None
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2022 09:58:15] "GET /empleado HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2022 09:58:15] "GET /static/styles/tablas.css HTTP/1.1" 200 -
+DEBUG:app:None
+ERROR:app:Exception on /empleados/agregar [GET]
+Traceback (most recent call last):
+  File "C:\Users\jonar\Desktop\PythonExamen\pyhtonex\EjercicioX\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\jonar\Desktop\PythonExamen\pyhtonex\EjercicioX\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\jonar\Desktop\PythonExamen\pyhtonex\EjercicioX\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\jonar\Desktop\PythonExamen\pyhtonex\EjercicioX\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\jonar\Desktop\PythonExamen\pyhtonex\EjercicioX\app.py", line 52, in agregarEmpleado
+    empleado = empleado()
+UnboundLocalError: local variable 'empleado' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2022 09:58:18] "[35m[1mGET /empleados/agregar HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
