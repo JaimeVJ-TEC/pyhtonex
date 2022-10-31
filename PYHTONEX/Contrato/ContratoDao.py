@@ -1,7 +1,7 @@
-#  Dao = Data Access Object 0   -  Martes 5 Oct 2022
-from Conexion import Conexion
+import sys
+sys.path.append('./PYHTONEX')
 from Contrato import Contrato
-from logger_base import log 
+from logger_base import log
 from CursorDelPool import CursorDelPool
 
 class ContratoDao:
