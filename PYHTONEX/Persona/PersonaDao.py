@@ -50,7 +50,7 @@ class PersonaDao:
 if __name__ == "__main__":
 
     # Insertar
-    # persona = Persona(nombre="Pedro", edad=21, correo="juan@gmail.com")
+    # persona = Persona(nombre="Carlos", edad=23, correo="carlos@gmail.com")
     # personasInsertadas = PersonaDao.insertar(persona)
     # log.debug(f"Personas insertadas {personasInsertadas}")
 

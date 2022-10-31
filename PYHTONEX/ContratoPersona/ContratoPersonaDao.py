@@ -24,7 +24,7 @@ class ContratoPersonaDao:
     @classmethod
     def insertar(cls,contrato):
         with CursorDelPool() as cursor:
-                valores = (contrato.nocontrato, contrato.costo, contrato.fechainicio, contrato.fechafin)
+                valores = (contrato.idcontrato, contrato.idpersona)
                 cursor.execute(cls._INSERTAR,valores)
                 log.debug("Se registro un contrato de personas")
                 return cursor.rowcount
@@ -33,7 +33,7 @@ class ContratoPersonaDao:
 if __name__ == "__main__":
 
     #INSERT
-    contrato = ContratoPersona(idpersona=2, idcontrato=2)
+    contrato = ContratoPersona(idpersona=1, idcontrato=1)
     ContratoRegistrado = ContratoPersonaDao.insertar(contrato)
     log.debug(f"Clientes registrados {ContratoRegistrado}")
 
