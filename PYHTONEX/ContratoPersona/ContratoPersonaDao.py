@@ -77,4 +77,5 @@ if __name__ == "__main__":
     contratoper1 = ContratoPersonaDao.contrato(correo="pp@gmail.com")
     for p in contratoper1:
         print('\n')
+        print('NOMBRE   | NO.CONTRATO  | COSTO')
         print(p)
