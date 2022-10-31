@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta chartset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="{% static 'css/detalle.css' %}">
+        <title>Detalle paciente</title>
+    </head>
+    <body>
+        <h3>
+            Id:
+            {{paciente.id}}
+            <br>
+            Nombre completo: 
+            {{paciente.nombre}} {{paciente.apellidos}}
+            <br>
+            Fecha de nacimiento:
+            {{paciente.fecha_nacimiento}}
+            <br>
+            Número de seguro social:
+            {{paciente.numero_segurosocial}}
+            <br>
+            Telefono:
+            {{paciente.telefono}}
+            <br>
+            Correo electronico:
+            {{paciente.correo_electronico}}
+            <br>
+            Tratamiento:
+            {{paciente.tratamiento}}
+        </h3>
+        <a href="{%url 'paciente'%}">Volver al inicio</a>
+    </body>
+</html>

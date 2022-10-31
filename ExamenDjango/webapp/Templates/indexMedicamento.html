@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta chartset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="{% static 'css/tabla.css' %}">
+        <title>Bienvenida</title>
+    </head>
+    <body>
+        <div>
+            <a href="agregarMedicamento">Agregar nuevo medicamento</a>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Fecha caducidad </th>
+                        <th>Detalle</th>
+                        <th>Actualizar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {%for medicamento in medicamentos%}
+                    <tr>
+                        <td>{{medicamento.id}}</td>
+                        <td>{{medicamento.nombre}}</td>
+                        <td>{{medicamento.caducidad}}</td>
+                        <td><a href="detalleMedicamento/{{medicamento.id}}">Detalles</a></td>
+                        <td><a href="editarMedicamento/{{medicamento.id}}">Editar medicamento</a></td>
+                        <td><a href="eliminarMedicamento/{{medicamento.id}}">Eliminar medicamento</a></td>
+                    </tr>
+                    {%endfor%}
+                </tbody>
+            </table>
+            <a href="{%url 'index'%}">Volver al inicio</a>
+        </div>
+    </body>
+</html>

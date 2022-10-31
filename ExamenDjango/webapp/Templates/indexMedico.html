@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta chartset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="{% static 'css/tabla.css' %}">
+        <title>Bienvenida</title>
+    </head>
+    <body>
+        <div>
+            <a href="agregarMedico">Agregar nuevo medico</a>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Cedula profesional</th>
+                        <th>Nombre</th>
+                        <th>Detalle</th>
+                        <th>Actualizar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {%for medico in medicos%}
+                    <tr>
+                        <td>{{medico.id}}</td>
+                        <td>{{medico.numero_cedulaprofesional}}</td>
+                        <td>{{medico.nombre}} {{medico.apellidos}}</td>
+                        <td><a href="detalleMedico/{{medico.id}}">Detalles</a></td>
+                        <td><a href="editarMedico/{{medico.id}}">Editar medico</a></td>
+                        <td><a href="eliminarMedico/{{medico.id}}">Eliminar medico</a></td>
+                    </tr>
+                    {%endfor%}
+                </tbody>
+            </table>
+            <a href="{%url 'index'%}">Volver al inicio</a>
+        </div>
+    </body>
+</html>

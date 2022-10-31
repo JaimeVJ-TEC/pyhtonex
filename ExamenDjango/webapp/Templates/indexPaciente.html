@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta chartset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="{% static 'css/tabla.css' %}">
+        <title>Bienvenida</title>
+    </head>
+    <body>
+        <div>
+            <a href="agregarPaciente">Agregar nuevo paciente</a>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Número seguro social</th>
+                        <th>Nombre completo</th>
+                        <th>Detalle</th>
+                        <th>Actualizar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {%for paciente in pacientes%}
+                    <tr>
+                        <td>{{paciente.id}}</td>
+                        <td>{{paciente.numero_segurosocial}}</td>
+                        <td>{{paciente.nombre}} {{paciente.apellidos}}</td>
+                        <td><a href="detallePaciente/{{paciente.id}}">Detalles</a></td>
+                        <td><a href="editarPaciente/{{paciente.id}}">Editar paciente</a></td>
+                        <td><a href="eliminarPaciente/{{paciente.id}}">Eliminar paciente</a></td>
+                    </tr>
+                    {%endfor%}
+                </tbody>
+            </table>
+            <a href="{%url 'index'%}">Volver al inicio</a>
+        </div>
+    </body>
+</html>

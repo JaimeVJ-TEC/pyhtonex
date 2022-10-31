@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta chartset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="{% static 'css/detalle.css' %}">
+        <title>Detalle medicamento</title>
+    </head>
+    <body>
+        <h3>
+            Id:
+            {{medicamento.id}}
+            <br>
+            Nombre: 
+            {{medicamento.nombre}}
+            <br>
+            Clasificación: 
+            {{medicamento.clasificación}}
+            <br>
+            Fecha de caducidad:
+            {{medicamento.caducidad}}
+            <br>
+            Tipo de almacenamiento:
+            {{medicamento.almacenamiento}}
+            <br>
+            Proveedor:
+            {{medicamento.proveedor}}
+        </h3>
+        <a href="{%url 'medicamento'%}">Volver</a>
+    </body>
+</html>

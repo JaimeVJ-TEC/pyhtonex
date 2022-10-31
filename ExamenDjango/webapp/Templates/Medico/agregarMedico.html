@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta chartset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="{% static 'css/editar.css' %}">
+        <title>Agregar medico</title>
+    </head>
+    <body>
+        <form method="POST">
+            <table>
+                {{formaMedico}}
+            </table>
+            <button type="submit"> Enviar </button>
+            {% csrf_token %}
+        </form>
+        <br>
+        <a href="{%url 'medico'%}">Volver</a>
+    </body>
+</html>

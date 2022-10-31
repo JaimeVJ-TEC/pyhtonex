@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta chartset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="{% static 'css/detalle.css' %}">
+        <title>Detalle medico</title>
+    </head>
+    <body>
+        <h3>
+            Id:
+            {{medico.id}}
+            <br>
+            Nombre completo: 
+            {{medico.nombre}} {{medico.apellidos}}
+            <br>
+            Fecha de nacimiento:
+            {{medico.fecha_nacimiento}}
+            <br>
+            Cedula profesional:
+            {{medico.numero_cedulaprofesional}}
+            <br>
+            Número de seguro social:
+            {{medico.numero_segurosocial}}
+        </h3>
+        <a href="{%url 'medico'%}">Volver</a>
+    </body>
+</html>
